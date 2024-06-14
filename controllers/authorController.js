@@ -145,7 +145,7 @@ exports.author_update_get = asyncHandler(async (req, res, next) => {
 
     if (author === null) {
         // No results.
-        const err = new Error("Book not found");
+        const err = new Error("Author not found");
         err.status = 404;
         return next(err);
     }
