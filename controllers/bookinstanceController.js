@@ -22,7 +22,7 @@ exports.bookinstance_detail = asyncHandler(async (req, res, next) => {
 
     if (bookInstance === null) {
         // No results.
-        const err = new Error("Book copy not found");
+        const err = new Error("Book Instance not found");
         err.status = 404;
         return next(err);
     }
@@ -127,7 +127,7 @@ exports.bookinstance_update_get = asyncHandler(async (req, res, next) => {
 
     if (bookInstance === null) {
         // No results.
-        const err = new Error("Book not found");
+        const err = new Error("Book Instance not found");
         err.status = 404;
         return next(err);
     }
