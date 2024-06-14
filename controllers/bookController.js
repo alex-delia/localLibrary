@@ -51,7 +51,7 @@ exports.book_detail = asyncHandler(async (req, res, next) => {
 
     if (book === null) {
         // No results.
-        const err = new Error("Genre not found");
+        const err = new Error("Book not found");
         err.status = 404;
         return next(err);
     }
